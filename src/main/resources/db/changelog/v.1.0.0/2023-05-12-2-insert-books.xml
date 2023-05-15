@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2023-05-12-2-insert-books"
+               id="2023-05-12-2-insert-books" author="s.m">
+        <insert tableName="book">
+            <column  name="title"  value="Effective Java"/>
+            <column  name="author"  value="Joshua Bloch"/>
+            <column  name="year"  value="2018"/>
+        </insert>
+        <insert tableName="book">
+            <column  name="title"  value="Java Projects"/>
+            <column  name="author"  value="Peter Verhas"/>
+            <column  name="year"  value="2018"/>
+        </insert>
+        <insert tableName="book">
+            <column  name="title"  value="Spring in Action, 5th Edition"/>
+            <column  name="author"  value="Craig Walls"/>
+            <column  name="year"  value="2018"/>
+        </insert>
+        <insert tableName="book">
+            <column  name="title"  value="Java Persistence with Hibernate, Second Edition"/>
+            <column  name="author"  value="Christian Bauer, Gavin King, and Gary Gregory"/>
+            <column  name="year"  value="2015"/>
+        </insert>
+        <insert tableName="book">
+            <column  name="title"  value="Java: A Beginner's Guide, Eighth Edition"/>
+            <column  name="author"  value="Herbert Schildt"/>
+            <column  name="year"  value="2019"/>
+        </insert>
+        <insert tableName="book">
+            <column  name="title"  value="Spring Boot 2 Recipes"/>
+            <column  name="author"  value="Marten Deinum"/>
+            <column  name="year"  value="2018"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
